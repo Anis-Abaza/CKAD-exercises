@@ -70,14 +70,23 @@ kubectl run nginx --image=nginx --restart=Never --dry-run=client -o yaml | kubec
 
 </p>
 </details>
+
 ### Output the yaml file of the pod you just created
+<details><summary>show</summary>
+<p>
 ```bash
 kubectl get po nginx -o yaml
 ```
+ </p>
+</details>
 ### Output the yaml file of the pod you just created without the cluster-specific information
+<details><summary>show</summary>
+<p>
 ```bash
 kubectl get po nginx -o yaml --export
 ```
+ </p>
+</details>
 ### Create a busybox pod (using kubectl command) that runs the command "env". Run it and see the output
 
 <details><summary>show</summary>
